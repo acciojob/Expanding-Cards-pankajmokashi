@@ -8,7 +8,7 @@
 .panel{
 	width:80px;
 }
-.img-text{
+img:active{
 	position: absolute;
 	font-size: 10px;
 	bottom: 1px;
