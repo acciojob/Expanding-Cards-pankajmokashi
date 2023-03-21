@@ -1,22 +1,16 @@
 /*  your css code here. If applicable */
-.conatiner{
+.container{
+	position: relative;
 	display: flex;
-	gap: 10px;
+	gap:10px;
 	flex-wrap: wrap;
 }
-img{
-	width: 100px;
-	height: 200px;
-	flex-shrink: 1;
+.panel{
+	width:80px;
 }
-
-img:hover{
-	width: 200;
-	flex-grow: 1;
-}
-.container > img:hover ~ .last{
-	flex-grow: 0;
-}
-.container > img:hover{
-	flex-grow: 1;
+.img-text{
+	position: absolute;
+	font-size: 10px;
+	bottom: 1px;
+	color: white;
 }
