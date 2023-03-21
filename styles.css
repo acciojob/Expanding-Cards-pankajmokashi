@@ -1,12 +1,22 @@
 /*  your css code here. If applicable */
 .conatiner{
 	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
 }
 img{
 	width: 100px;
-	height: 500px;
-	border-radius: 100px;
+	height: 200px;
+	flex-shrink: 1;
+}
+
+img:hover{
+	width: 200;
+	flex-grow: 1;
+}
+.container > img:hover ~ .last{
+	flex-grow: 0;
 }
 .container > img:hover{
-	width: 500px;
+	flex-grow: 1;
 }
